@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Bootstrap\bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Bootstrap\bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="Sitestyle\style.css" rel="stylesheet" type="text/css">
+    <title>Full Stack Conference Page</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-site" style="position: relative;">
+              <!-------------------------------------Home------------------------------------------------->
+    <header> 
+        <nav class="navbar navbar-dark bg-primary navbar-expand-sm fixed-top" id="navbar-site">
+          <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#home" >Home</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="#about" >About</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="#speakers" >Speakers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#schedule" >Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sign-up" >Sign Up</a>
+                </li>
+            </ul>
+          </div>
+            <div class="navbar-brand text-light d-sm-none  d-md-inline-block">
+               Presented by Limestone
+            
+          </div>
+        </nav> <!--Navigation of the page-->
+                <!---------------------------------Jumbotron-------------------------------------------->
+    <div class="bg-light d-flex flex-column flex-nowrap justify-content-center align-items-center" style="margin-top: 56px; padding-top: 70px; padding-bottom: 70px;" id="home" >
+        <h1 class="display-1 text-white" > Full Stack Conf</h1>
+        <p class="text-white h5 pb-3"> A One-day Conference About All Things Javascript</p>
+        <div class="btn-group btn-group-lg pt-4">
+            <button  type="button" data-toggle="modal" data-target="#register"  class="btn btn-primary btn-primary-lg">Register Now</button> 
+            <a type="button" href="#speakers" class="btn btn-light btn-light-lg">See Speakers</a>
+        </div> <!--Buttons group-->
+
+    </div><!--Jumbotron-->
+    </header><!--Home-->
+    <!-------------------------------About---------------------------------------------------->
+    <div class="container mt-5"  id="about" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; "> 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3"><!--row-->
+           <section class="col"><!--col 1-->
+                <div class="h2">Expert Speakers</div>
+                <div class="mt-3">
+                 <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets! 
+                 </p>
+                 <p>
+                     Want to meet the international Javascript community and share skills with some of the world's top experts, hackers, and makers? Be the first to know to expect what to expect for the future of Javascript.
+                 </p>
+                 <p>
+                 Full Stack Conf is committted to being incusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.
+                 </p>
+          </div> <!--col 1-->
+           </section> <!--col 2-->
+         <section class="col">
+            <div class="h2">About Full Stack Conf</div>
+            <div>
+                <p>
+                <img src="Images/pdx.jpg" class="d-none img img-fluid d-sm-inline-block mt-2" title="Portland" alt="A city in Portland" style="border-radius: 5px;"> </p>
+                <p>The beautiful city of Portland, Oregon will be the host city for Full Stack Conf!</p>
+                <p>Explore the future of JavaScript with a lineup of industry professionals. Discover new techniques to advance your career as a web developer.
+                </p>
+            </div>   
+          </section> <!--col 2-->
+           <section class="col" > <!--col 3-->
+            <div class="h2">
+                What You'll Learn
+            </div>
+            <div class="list-group mt-3">
+                
+                <a class="list-group-item py-3" type="button"><strong>MongoDB: </strong> NoSQL database</a>
+                <a class="list-group-item py-3" type="button"><strong>Angular:</strong> Javascript framework</a>
+                <a class="list-group-item py-3" type="button"><strong>Express:</strong> Framework for Node</a>
+                <a class="list-group-item py-3" type="button"><strong>Node.js:</strong> Javascript environment</a>
+                <a class="list-group-item py-3" type="button"><strong>ES2015:</strong> Latest version of Javascript</a>
+                <a class="list-group-item py-3" type="button"><strong>Babel:</strong> Javascript Compiler</a>
+            </div>
+           </section> <!--col 3-->
+        
+        </div><!--row-->
+    </div> <!--About-->
+             <!-------------------------------------------Speakers------------------------------------>
+    <div class="container" id="speakers" ><!--container-->
+    <h2 class="display-4 my-5" style="color: darkgray; text-align: center;font-family: Arial, Helvetica, sans-serif;">Speakers</h2>
+    <div class="row  row-cols-1 row-cols-md-2 row-cols-lg-3" id="rows"> <!--row-->
+    <div class="col mb-5" >
+    <section class="card"> <!--card 1-->
+      <img class="card-img-top img-fluid" src="Images/angie.png" alt="angie.pic" title="Angie McAngular">
+        <div class="card-body" >
+           <h2 class="card-title">Angie McAngular</h2> 
+             <p class="card-text">Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!</p>
+        </div>
+    </section><!--card 1-->
+    </div><!--col 1-->
+
+    <div class="col mb-5">
+    <section class="card "><!--card 2-->
+        <img class="card-img-top img-fluid" src="Images/nodestradamus.png" alt="nodestradamus.pic" title="NodeStradamus">
+    <div class="card-body" >
+           <h2 class="card-title">NodeStradamus</h2> 
+             <p class="card-text">"NodeStra" is a software engineer and philosopher trying to leave the world better than he found it. He codes for non-profits, eCommerce, and large-scale web apps.</p>
+    </div>
+    </section><!--card 2-->
+    </div><!--col 2-->
+
+    <div class="col mb-5">
+    <section class="card"><!--card 3-->
+        <img class="card-img-top img-fluid" src="Images/geo.png" alt="geo.pic" title="Geo Lation">
+        <div class="card-body" >
+           <h2 class="card-title">Geo "Lo" Cation</h2> 
+            <p class="card-text">Geo is a JavaScript developer working on large-scale applications. He's also a teacher who strives to support students in removing all barriers to learning code.</p>
+        </div>
+    </section><!--card 3-->
+     </div><!--col 3-->
+
+     <div class="col mb-5">
+    <section class="card"><!--card 4-->
+        <img class="card-img-top img-fluid" src="Images/ecma.png" alt="ecma.pic" title="Ecma Scriptnstuff">
+        <div class="card-body" >
+           <h2 class="card-title">Ecma Scriptnstuff</h2> 
+            <p class="card-text">Ecma found her passion for computers and programming over 15 years ago. She is excited to introduce people to the wonderful world of JavaScript.</p>
+        </div>
+    </section><!--card 4-->
+    </div><!--col 4-->
+
+    <div class="col mb-5">
+    <section class="card"><!--card 5-->
+        <img class="card-img-top img-fluid" src="Images/jay.png" alt="jay.pic" title="Jay Query">
+        <div class="card-body" >
+           <h2 class="card-title">Jay Query</h2> 
+            <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript & jQuery: The Missing Manual, and web development teacher.</p>
+        </div>
+    </section><!--card 5-->
+    </div><!--col 5-->
+
+    <div class="col mb-5">
+    <section class="card"><!--card 6-->
+        <img class="card-img-top img-fluid" src="Images/json.png" alt="json.pic" title="Json Babel">
+        <div class="card-body" >
+           <h2 class="card-title">Json Babel</h2> 
+            <p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using the right tools for the job.</p>
+        </div>
+    </section><!--card 6-->
+     </div><!--col 6-->
+ 
+ </div><!--row-->
+ </div><!---Speakers-->
+
+        <!-------------------------------------------Schedule------------------------------------>
+ <div class="container" id="schedule"><!--container-->
+    <h2 class="display-4 my-5" style="color: darkgray; text-align: center;font-family: Arial, Helvetica, sans-serif;">Schedule</h2>
+    <div class="list-group" id="item" style="font-family: Arial, Helvetica, sans-serif; "><!-------list group item-->
+        <li class="list-group-item" style="cursor: unset;" >Keynote: Internet Of Things 
+            <span style="float: right;" class="badge badge-pill badge-info">9:00am</span>
+          <p>
+            NodeStradamus 
+          </p>
+        </li> 
+
+        <li class="list-group-item" style="cursor: unset;">Angular Basics
+            <span style="float: right;" class="badge badge-pill badge-info">10:00am</span>
+            <p>
+                Angie McAngular
+            </p>
+        </li>
+
+        <li class="list-group-item" style="cursor: unset;" >Hey Mongo
+            <span style="float: right;" class="badge badge-pill badge-info">11:00am</span>
+            <p>
+                Jay Query
+            </p>
+        </li>
+
+        <li class="list-group-item " style="cursor: unset; background-color: rgba(60, 179, 0, 0.2); color:  rgba(60, 179, 0,0.9);" >Lunch
+            <span style="float: right;" class="badge badge-pill badge-info">12:00pm</span>
+            <p>
+                Free pizza for everyone
+            </p>
+        </li>
+
+        <li class="list-group-item" style="cursor: unset;" >Introducing EC2015
+            <span style="float: right;" class="badge badge-pill badge-info">1:00pm</span>
+            <p>
+                Ecma Scriptnstuff
+            </p>
+        </li>
+
+        <li class="list-group-item" style="cursor: unset;" >Gettin' MEAN
+            <span style="float: right;" class="badge badge-pill badge-info">2:00pm</span>
+            <p>
+                Geo "Leo" Cation
+            </p>
+        </li>
+
+        <li class="list-group-item" style="cursor: unset;">What's Babel
+            <span style="float: right;" class="badge badge-pill badge-info">3:00pm</span>
+            <p>
+                Json Babel
+            </p>
+        </li>
+    
+    </div><!-------listgroup item-->
+ </div><!--schedule-->
+<!-----------------------------------------------------Register------------------------------>
+ <div class="container" >
+      <div class="border-bottom d-flex justify-content-center align-items-center">
+        <button type="button" class="my-5 btn btn-outline-info p-2" style="font-size: x-large;" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
+      </div>
+  </div>
+    <!------------------------------------Modal For Registration --------------------------------->
+    <div class="container-fluid">
+    <div class="modal fade" id="register" style="font-family: Arial, Helvetica, sans-serif;"><!-------Modal fade-------->
+        <div class="modal-dialog"><!--------Modal-dialog------>
+            <div class="modal-content" id="modalz"><!---------Modal-Content------->      
+                   <div>  
+                   <p class="bg-info text-light px-3 py-3" style="opacity: 0.5; font-size: 30px;">Register For Full Stack Conf
+                    <button type="button" data-dismiss="modal" class="close" aria-label="close" ><span id="time">&times;</span></button></p> 
+                    </div>
+                   <div>
+                   <div class="alert alert-dismissible fade show bg-warning mt-2 mx-2 py-3 pl-3" style="opacity: 0.4;"><strong>Hurray!</strong> Early bird registration ends in 2 days
+                    <button type="button" style="margin-right: -10px; margin-top:-10px; font-size: 25px;" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                   </div>
+                   </div>
+                  <div class="modal-body"> <!------modal body------->
+  <!---------------------------------------------Basic form--------------------------------------------------->
+                    <form >
+  <!---------------------------------------------Basic Info--------------------------------------------------->
+                       <fieldset>
+                       <div class="form-group" >
+                            <legend class="form-label">Basic Info</legend>
+                            <label class="form-control-label" for="name" >Name:</label>
+                            <input class="form-control" type="text" id="name" required>
+                        </div>
+                           <div class="form-group"> <label class="form-control-label" for="email">Email:</label>
+                            <input class="form-control  border-danger" id="email" type="email"  required>
+                          </div>
+                        
+                           <div class="form-group">
+                            <label class="form-control-label" for="jobrole">Job Role</label>
+                            <select class="form-select form-control" id="jobrole">
+                            <option value="Full Stack Javascript Developer">Full Stack Javascript Developer</option>
+                            <option value="Front End Developer">Front End Developer</option>
+                            <option value="Back End Developer">Back End Developer</option>
+                            <option value="Designer">Designer</option>
+                            <option value="Student">Student</option>
+                         </select>
+                        </div>
+                      </fieldset>
+         <!-------------------------------------Topic that interest You-----------------------------> 
+                        <fieldset class="form-group border-top pt-4"> 
+                        <legend class="form-label">Which Topics Interest You Most? </legend> 
+                           
+                         <div class="form-check"><label for="javascriptFramework" class="form-check-label">  <input class="form-check-input" id="javascriptFramework" value="Javascript-Framework" type="checkbox" > Javascript Framework </label>
+                           </div>
+
+                           <div class="form-check"><label for="javascriptLbraries" class="form-check-label">  <input class="form-check-input" id="javascriptLbraries" value="Javascript-Libraries" type="checkbox" > Javascript Libraries </label>
+                           </div>
+
+                           <div class="form-check"><label for="node.js" class="form-check-label">  <input class="form-check-input" id="node.js" value="Node.js" type="checkbox" > Node.js </label>
+                           </div>
+
+                           <div class="form-check"><label for="buildTools" class="form-check-label">  <input class="form-check-input" id="buildTools" value="Build-Tools" type="checkbox" > Build Tools </label> 
+                            </div>
+
+                           <div class="form-check"><label for="es2015" class="form-check-label">  <input class="form-check-input" type="checkbox" id="es2015" value="ES2015" > ES2015 </label>
+                            </div>
+                        
+                    </fieldset><!-----Topic that interest You----->
+                <!------------------------------Payment Info---------------------------------->
+                     <fieldset class="border-bottom" style="font-size: 20px;">
+                        <div class="form-group border-top pt-4">
+                          <legend class="form-legend">Payment Info</legend>
+                          <div  class="row">
+                            <div class="col-sm-4 col-lg-6">
+                              <label class="form-text" for="card-number">Card Number: </label>
+                              <input  class="form-control border-success mt-n2" id="card-number" type="number" spellcheck="false" data-ms-editor="true" required >
+                              </div>
+                            <div class="col-lg-3">
+                              <label class="form-text" for="zip-code" >Zip Code:</label>
+                              <input class="form-control mt-n2" id="zip-code" type="number" required>
+                            </div>
+                            <div class="col-lg-3">
+                              <label class="form-text" for="cvv">CVV:</label>
+                             <input class="form-control mt-n2" id="cvv" type="number" required>                          
+                           </div>
+                        </div> 
+                        </div>
+                         <div class="form-group row">
+                           <div class="row">
+                            <label class="form-control-label col-form-label" for="expiry">Expiration Date:</label>
+                             <div class="col-8">
+                              <select class="form-select ml-2 form-control col">
+                               <option value="January">1 - January</option>
+                               <option value="February">2 - February</option>
+                               <option value="March">3 - March</option>
+                               <option value="April">4 - April</option>
+                               <option value="May">5 - May</option>
+                               <option value="June">6 - June</option>
+                               <option value="July">7 - July</option>
+                               <option value="August">8 - August</option>
+                               <option value="September">9 - September</option>
+                               <option value="October">10 - October</option>
+                               <option value="November">11 - November</option>
+                               <option value="December">12 - December</option> 
+                            </select>
+                             </div>
+                               <div class="col-4">
+                                <select class="form-select mx-4 form-control col"  id="expiry">
+                                  <option value="2016">2016</option>
+                                  <option value="2017">2017</option>
+                                  <option value="2018">2018</option>
+                                  <option value="2019">2019</option>
+                                  <option value="2020">2020</option>
+                                  <option value="2021">2021</option>
+                                  <option value="2022">2022</option>
+                                  <option value="2023">2023</option>
+                                  </select>
+                               </div>
+                           </div>
+                        </div><!---Payment Info-->
+                      </fieldset>
+                      <button class="btn btn-primary my-4" type="submit" >Register</button><!----Register----->
+                      </form><!------form-->
+                      </div><!-----modal body-->
+                </div><!---------Modal-Content-------> 
+            </div> <!------Modal dialog------>
+          </div> <!-------Modal fade-------->
+     
+
+        </div>
+<!----------------------------------------------Sign Up-------------------------------------------->
+ <div class="container my-5" id="sign-up" style="scroll-behavior: unset;">
+    <div class="w-50" style="float: left;">
+     <p>About Limestone</p>
+     <p>
+        Limestone brings affordable technology education to people everywhere to help them achieve their dreams and change the world.
+     </p>
+    </div>
+    <div style="float: right;">
+     <p>Stay up to-date on Full Stack Conf</p>
+     <p class="btn-group">
+        <input class="border-1"type="search" placeholder="Email" aria-label="email-signup"><button type="submit" class="btn btn-primary">Sign Up</button>
+     </p>
+    </div>
+
+ </div>
+ <footer style="clear: both; margin-top: 200px;" class="container border-top">
+        <div>
+         <div class="my-5 w-50 float-left" id="end">
+              <a href="#" class="text-decoration-none" >Community</a>
+              <a href="#" class="text-decoration-none">Tracks</a>
+              <span class="dropup btn-group">
+             <button class="btn btn-outline-secondary">Other Confs</button>
+              <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">CSS Conf</a>
+           
+                 <a class="dropdown-item" href="#">Python Conf</a>
+    
+                 <a class="dropdown-item" href="#">Java Conf</a>
+    
+                 <a class="dropdown-item" href="#">Swift Conf</a>
+          
+                </div>
+              </span>
+
+            </div>
+
+           <div class="float-right my-5" id="copy">
+              <p>&copy; 2016 Full Stack Conf and Limestone</p>
+            </div>
+       </div>
+
+    </footer><!------Register------>
+
+ <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+ <script src="Bootstrap\popper.min.js"></script>
+ <script src="Bootstrap\bootstrap.min.js"></script>
+ <script>
+    $(function() {
+      var topoffset = 10; //variable for menu height
+    
+      //Use smooth scrolling when clicking on navigation
+      $('.navbar-nav a').click(function() {
+        if (location.pathname.replace(/^\//,'') === 
+          this.pathname.replace(/^\//,'') && 
+          location.hostname === this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top-topoffset
+            }, 0);
+            return false;
+          } //target.length
+        } //click function
+      }); //smooth scrolling
+    
+    });
+
+    $('body').scrollspy({ target: '#navbar-site' })
+    </script>
+</body>
+</html>
